@@ -28,3 +28,6 @@
 ## Credentials
     username: admin
     passord: password
+
+
+After deploying helloworld in jfrog,
