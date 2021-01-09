@@ -1,4 +1,8 @@
-Jenkins install in one Server:
+Deploying artifact into Jfrog from Jenkin and Downloading from Jfrog into Jenkin
+==================================================================================
+
+Jenkins Setup (t2 large instance:
+
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 
 sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
@@ -10,11 +14,12 @@ yum install git maven java-1.8* -y
 sudo service jenkins start
 
 
-Jfrog set up in another server
+Jfrog set up in another AWS instance
 ==============================
 
 Install Java
 yum install java-1.8* -y 
+
 
 Download Artifactory packages onto /opt/
 ========================================
@@ -49,19 +54,18 @@ passord: password
 in Jenkins server
 =================
 
-Add the Plugin called Artifactory(under Manage Jenkins--->Manage Plugin-->Search in Available)
+>>> Add Artifactory plugin (its for Jfrog --Manage Jenkins--->Manage Plugin-->Search Arifactory in Available)
 
-Next, Provide the ip address of Jfrog under Manage Plugin -- Configure system
+>>> Provide the ip address of Jfrog and Server id called Jfrog (Manage Plugin -- Configure system):
 
-![Capture](https://user-images.githubusercontent.com/54719289/104104953-23f78a80-52d1-11eb-9b38-2e8cdd2d801a.JPG)
+![Capture](https://user-images.githubusercontent.com/54719289/104105373-94071000-52d3-11eb-94ac-e4f1d0c4b22f.JPG)
 
-Next , provide the details of Git and Maven Tool configuration (Manage Jenkins -->Global onfiguration)
+>>> Provide the details of Git and Maven Tool configuration (Manage Jenkins -->Global onfiguration)
 
-Next create a New Pipeline item called  jfrog-deploy and  place Jenkinsfile code in configure
+>>> create a New Pipeline item called  jfrog-deploy and  place Jenkinsfile code in configure
 
-After that build the project and see the result in console output,
 
-![Capture](https://user-images.githubusercontent.com/54719289/104105074-c7489f80-52d1-11eb-9586-ab1cd870e5b1.JPG)
+After that build the project and see the result in console output:
 
 ![Capture](https://user-images.githubusercontent.com/54719289/104105137-3aeaac80-52d2-11eb-984b-a31da4b210e5.JPG)
 
