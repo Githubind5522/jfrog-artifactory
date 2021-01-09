@@ -87,7 +87,7 @@ in Jfrog Instance
 ![Capture](https://user-images.githubusercontent.com/54719289/104105412-e9432180-52d3-11eb-817f-0c754beccf59.JPG)
 
 
-Jenkin Server:  (Downloaded from Jfrog through script into Jenkins under /tmp folder)
+Jenkin Server:  (Downloaded from Jfrog into Jenkins under- through Script /tmp folder)
 ==============
 
 
