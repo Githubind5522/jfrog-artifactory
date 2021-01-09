@@ -1,7 +1,7 @@
 Deploying artifact into Jfrog from Jenkin and Downloading from Jfrog into Jenkin
 ==================================================================================
 
-Jenkins Setup (t2 large instance:
+Jenkins Setup (t2 large instance):
 
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 
@@ -18,6 +18,7 @@ Jfrog set up in another AWS instance
 ==============================
 
 Install Java
+
 yum install java-1.8* -y 
 
 
@@ -25,20 +26,25 @@ Download Artifactory packages onto /opt/
 ========================================
 
 For Latest version of Artifactory OSS download it from here https://jfrog.com/open-source/
+
 For Older version of Artifactory OSS download it from here https://jfrog.bintray.com/artifactory/
+
 For Latest version of Artifactory Pro download it from here https://jfrog.com/artifactory/
 
 Extract artifactory tar.gz file
 ==============================
 
 cd /opt 
+
 wget https://jfrog.bintray.com/artifactory/jfrog-artifactory-oss-6.9.6.zip
+
 unzip jfrog-artifactory-oss-6.9.6.zip
 
 Start the services
 ==================
 
 cd /opt/artifactory-oss-6.9.6/bin
+
 ./artifactory.sh start
 
 Access artifactory from browser
@@ -49,6 +55,7 @@ http://<PUBLIC_IP_Address>:8081
 Credentials
 ==========
 username: admin
+
 passord: password
 
 in Jenkins server
@@ -80,7 +87,7 @@ in Jfrog Instance
 ![Capture](https://user-images.githubusercontent.com/54719289/104105412-e9432180-52d3-11eb-817f-0c754beccf59.JPG)
 
 
-Jenkin Server:  (Dwonloaded from Jfrog into Jenkins under /tmp folder)
+Jenkin Server:  (Downloaded from Jfrog into Jenkins under /tmp folder)
 ==============
 
 ![Capture](https://user-images.githubusercontent.com/54719289/104105156-5786e480-52d2-11eb-9a51-af95c1e79a6d.JPG)
