@@ -70,12 +70,14 @@ After that build the project and see the result in console output:
 ![Capture](https://user-images.githubusercontent.com/54719289/104105137-3aeaac80-52d2-11eb-984b-a31da4b210e5.JPG)
 
 
-Check Jfrog server for the update:
+Check Jfrog UI for the update:
 
 ![Capture](https://user-images.githubusercontent.com/54719289/104105098-f65f1100-52d1-11eb-86d7-22c5c15ae323.JPG)
 
 
-![Capture](https://user-images.githubusercontent.com/54719289/104105120-1c84b100-52d2-11eb-9593-222ab7579482.JPG)
+in Jfrog Instance
+
+![Capture](https://user-images.githubusercontent.com/54719289/104105412-e9432180-52d3-11eb-817f-0c754beccf59.JPG)
 
 
 Jenkin Server:  (Dwonloaded from Jfrog into Jenkins under /tmp folder)
